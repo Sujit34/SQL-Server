@@ -17,7 +17,7 @@ as
 select Emp_Id,Emp_Name,Emp_Salary,Emp_City from DBO.Employee_Details 
 ```
 
-#### ENcrypting a View
+#### Encrypting a View
 ```sql
 Create View Employee_Details4  
 with Encryption  
