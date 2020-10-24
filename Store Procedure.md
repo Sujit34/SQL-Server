@@ -1,6 +1,6 @@
 ## Store Procedure
 
-Store Procedure Syntex
+Store Procedure Syntax
 
 ```sql
 SET ANSI_NULLS ON  
