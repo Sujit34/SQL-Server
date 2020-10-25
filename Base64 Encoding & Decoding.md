@@ -1,5 +1,6 @@
 ## Convert to Base64
 
+```sql
 -- Encode the string "TestData" in Base64 to get "VGVzdERhdGE="
 SELECT
     CAST(N'' AS XML).value(
@@ -9,10 +10,11 @@ SELECT
 FROM (
     SELECT CAST('TestData' AS VARBINARY(MAX)) AS bin
 ) AS bin_sql_server_temp;
-
+```
 
 ## Convert from Base64
 
+```sql
 -- Decode the Base64-encoded string "VGVzdERhdGE=" to get back "TestData"
 SELECT 
     CAST(
@@ -23,3 +25,4 @@ SELECT
         AS VARCHAR(MAX)
     )   ASCIIEncoding
 ;
+```
